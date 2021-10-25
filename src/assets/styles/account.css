@@ -1,0 +1,48 @@
+.join__same__box .input__group .input__group__cover .input__box .id_cover {
+    display: flex;
+}
+
+.join__same__box .input__group .input__group__cover .input__box .id_cover input {
+    flex: 1;
+}
+
+.join__same__box .input__group .input__group__cover .input__box .id_cover button {
+    margin-left: 10px;
+    border-radius: 4px;
+    background: #00b9ef;
+    border: none;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.join__same__box .input__group .input__group__cover.email .phone {
+    align-items: center;
+    font-size: 14px;
+    color: #bebbc9;
+}
+
+.join__same__box .input__group .input__group__cover.email .phone input {
+    margin: 0;
+    flex: 1;
+}
+
+.join__same__box .input__group .input__group__cover.email .phone span {
+    margin: 0 4px;
+}
+
+
+.join__same__box .input__group .input__group__cover.email .phone select {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.button__group.btn-mt30 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+

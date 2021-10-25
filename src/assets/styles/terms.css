@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+.button__group {
+    display: flex;
+    justify-content: center;
+}
+.button__group .btn-confirm {
+    margin: 0;
+}
+.button__group .btn-confirm.prev {
+    border: 1px solid #3982d8;
+    color: #3982d8;
+    background: #fff;
+    margin-right: 10px;
+}
+.button__group .btn-confirm.check {
+    background: #e3e4e5;
+    color: #fff;
+}
+
+.button__group .btn-confirm.check.check-on {
+    background: #3982d8;
+}

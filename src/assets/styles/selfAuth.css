@@ -1,0 +1,361 @@
+.auth1__wrap {
+    background: #f8f8f8;
+}
+
+.join__width {
+    width: 1250px;
+}
+
+.join__title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #333139;
+    margin: 30px 0 20px 25px;
+}
+
+
+.join__same__box {
+    background: #fff;
+    border-radius: 30px;
+    padding: 35px 30px 40px 30px;
+}
+
+.join__same__box .title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.join__same__box .title p {
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    color: #333139;
+    padding-left: 10px;
+}
+
+.join__same__box .agreement {
+    background: #f5f6f8;
+    border: 1px solid #e3e4e5;
+    padding: 25px 33px 25px 26px;
+    border-radius: 4px;
+}
+
+.join__same__box .agreement ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.join__same__box .agreement ul li {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox__text {
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    color: #565360;
+}
+
+.checkbox__text label {
+    padding-left: 32px !important;
+}
+.join__same__box .agreement ul li .view {
+    font-size: 14px;
+    color: #878296;
+    border: 1px solid #e3e4e5;
+    padding: 9px 13px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.join__same__box .agreement ul li.mt10 {
+    margin-top: 10px;
+}
+
+
+.join__same__box .input__group {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.join__same__box .input__group .input__group__cover {
+    width: 49%;
+    margin-top: 40px;
+}
+
+.join__same__box .input__group .input__group__cover:first-child {
+    margin-top: 0;
+}
+.join__same__box .input__group .input__group__cover:nth-child(2) {
+    margin-top: 0;
+}
+
+
+.join__same__box .input__group .input__group__cover.inputgroup__two {
+    display: flex;
+    justify-content: space-between;
+}
+.join__same__box .input__group .input__group__cover.inputgroup__two div {
+    width: 49%;
+}
+
+
+.join__same__box .input__group .input__group__cover .input__box {}
+.join__same__box .input__group .input__group__cover .input__box p {
+    position: relative;
+    font-size: 16px;
+    color: #565360;
+    letter-spacing: -0.025em;
+    margin-bottom: 10px;
+}
+
+.join__same__box .input__group .input__group__cover .input__box p span {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    color: #00b9ef;
+}
+
+.join__same__box .input__group .input__group__cover .input__box input {
+    border: 1px solid #d8d6de;
+    border-radius: 4px;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #333139;
+    outline: none;
+}
+
+.join__same__box .input__group .input__group__cover .input__box input:focus {
+    border: 1px solid #00b9ef;
+}
+
+
+.join__same__box .input__group .input__group__cover .input__box input[type=text] {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+}
+
+.join__same__box .input__group .input__group__cover .input__box input[type=text]::placeholder {
+    color: #bebbc9;
+    font-size: 14px;
+}
+
+.join__same__box .input__group .input__group__cover .input__box input[type=password] {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+}
+.join__same__box .input__group .input__group__cover .input__box input[type=password]::placeholder {
+    color: #bebbc9;
+    font-size: 14px;
+}
+
+/* 외국인 내국인 */
+.join__same__box .input__group .input__group__cover .input__box .people {
+    display: flex;
+    border: 1px solid #d8d6de;
+    border-radius: 4px;
+    color: #bebbc9;
+    font-size: 14px;
+    text-align: center;
+}
+.join__same__box .input__group .input__group__cover .input__box .people div {
+    padding: 0px 10px;
+    width: 50%;
+    cursor: pointer;
+    height: 38px;
+    line-height: 38px;
+}
+.join__same__box .input__group .input__group__cover .input__box .people div.active {
+    color: #3982d8;
+    font-weight: 700;
+    box-shadow: 0 0 0 2px #3982d8;
+    border-radius: 4px;
+}
+
+/* 휴대전화 */
+
+.join__same__box .input__group .input__group__cover.inputgroup__three {}
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone {
+    display: flex;
+}
+
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone select {
+    width: 30%;
+    border: 1px solid #d8d6de;
+    border-radius: 4px;
+    padding: 0px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('assets/images/select__arrow.png') no-repeat 95% 50%;
+    color: #bebbc9;
+    outline:none;
+    height: 38px;
+    line-height: 38px;
+}
+
+
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone select:focus {
+    border: 1px solid #00b9ef;
+}
+
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone select::-ms-expand {
+    display: none;
+}
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone input {
+    width: 50%;
+    margin: 0 10px
+}
+.join__same__box .input__group .input__group__cover.inputgroup__three .phone button {
+    width: 20%;
+    color: #fff;
+    background: #00b9ef;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 38px;
+    height: 38px;
+}
+
+
+.btn-confirm {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0px 40px;
+    background: #e3e4e5;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+}
+
+.btn-confirm.btn-on {
+    background: #3982d8;
+}
+
+
+
+/* tooltip */
+.tooltip__container.selfauth1 {
+    left: -245px;
+}
+
+
+
+
+/* 체크박스 부분  */
+
+input[type=checkbox] { display:none; }
+input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 24px;
+    padding-left: 22px;
+    background: url('assets/images/checkbox_default.png') no-repeat;
+}
+input[type=checkbox]:checked + label {
+    background: url('assets/images/checkbox_active.png') no-repeat;
+}
+
+
+
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal .modal__container{
+}
+
+.modal__content {
+    display: flex;
+}
+
+.already {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #fff;
+    padding: 40px 50px 40px 70px;
+}
+
+.already .already__title {
+    font-size: 38px;
+    letter-spacing: -0.05em;
+    color: #3982d8;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.already .already__title span {
+    position: relative;
+}
+.already .already__title span img {
+    position: absolute;
+    left: -15px;
+    top: -5px;
+}
+
+.already .already__info {
+    margin-top: 50px;
+}
+.already .already__info .info {
+    display: flex;
+    justify-content: space-between;
+}
+.already .already__info .info:nth-child(2) {
+    margin-top: 10px;
+}
+.already .already__info .info .info__left {
+    display: flex;
+    align-items: center;
+}
+.already .already__info .info .info__left .sort {
+    font-size: 16px;
+    color: #999999;
+}
+.already .already__info .info .info__left .value {
+    font-size: 16px;
+    color: #245da0;
+    margin-left: 10px;
+}
+.already .already__info .info .info__left .value.idbold {
+    font-size: 20px;
+}
+
+.already .already__info .info button {
+    border-radius: 2px;
+    font-size: 12px;
+    border: 1px solid #3982d8;
+    color: #3982d8;
+    background: #fff;
+    padding: 5px 10px;
+}
+.already .sub__text {
+    margin-top: 60px;
+    font-size: 15px;
+    letter-spacing: -0.05em;
+    color: #3982d8;
+    display: block;
+}

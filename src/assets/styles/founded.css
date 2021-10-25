@@ -1,0 +1,47 @@
+.join__same__box .field {
+    margin-bottom: 10px;
+}
+.join__same__box .field .field__tit {
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    color: #565360;
+}
+.join__same__box .field__item {
+    margin-top: 10px;
+}
+.join__same__box .field__item:after {
+    display: block;
+    clear: both;
+    content:"";
+}
+.join__same__box .field__item li {
+    float: left;
+    width: 20%;
+    background: #c3c8d1;
+    border-right: 1px solid #Fff;
+    border-bottom: 1px solid #fff;
+    height: 80px;
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+}
+.join__same__box .field__item li.active {
+    font-weight: 500;
+    background: #3982d8 url('assets/images/field_check.png') 10px center  no-repeat ;
+}
+
+.join__same__box .input__group .input__group__cover.inputgroup__three.field__select .phone select {
+    width: 100%;
+}
+
+
+
+
+
+

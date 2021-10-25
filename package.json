@@ -1,0 +1,63 @@
+{
+  "name": "ibk-box-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@balkangraph/orgchart.js": "^7.9.15",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@toast-ui/editor": "^2.5.3",
+    "@toast-ui/editor-plugin-color-syntax": "^3.0.1",
+    "@toast-ui/react-editor": "^3.0.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^2.9.4",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "http-proxy-middleware": "^2.0.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-cookie": "^4.0.3",
+    "react-datetime": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-file-drop": "^3.1.2",
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-simple-tree-menu": "^1.1.18",
+    "react-spinners-css": "^2.0.1",
+    "reactstrap": "^8.9.0",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.development react-scripts start",
+    "build": "env-cmd -f .env.development react-scripts build",
+    "build-prod": "env-cmd -f .env.production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,417 @@
+// pagination
+
+// .pagination__cover {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 5rem;
+
+//   .page-item:first-child .page-link {
+//     border-top-left-radius: 50%;
+//     border-bottom-left-radius: 50%;
+//   }
+
+//   .page-link {
+//     display: flex;
+//     padding: 0;
+//     line-height: 0;
+//     width: 3rem;
+//     height: 3rem;
+//     border-radius: 50%;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0.5rem;
+//     border: 1px solid #dc3545;
+//     color: #dc3545;
+//   }
+
+//   .page-link:focus {
+//     box-shadow: 0 0 0 0.2rem RGB(255 104 92 / 20%);
+//   }
+
+//   .page-link:hover {
+//     color: #fff;
+//     background-color: #c82333;
+//     border-color: #c82333;
+//   }
+
+//   .page-item.active .page-link {
+//     background: #dc3545;
+//     border: 1px solid #dc3545;
+//   }
+
+//   .page-item:last-child .page-link {
+//     border-top-right-radius: 50%;
+//     border-bottom-right-radius: 50%;
+//   }
+// }
+
+/*
+전체 flex 구조
+*/
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*
+header 관련
+*/
+.header {
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.header-logo {
+  max-width: 100px;
+  margin: 0 auto;
+}
+.header-info {
+  text-align: right;
+}
+
+/*
+main 관련.
+*/
+
+.contents {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*
+main 속에 컨텐츠 부분들
+*/
+
+.content__cover {
+  display: flex;
+  margin-top: 10px;
+
+  .main__content {
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+
+    .main__container {
+      // overflow-x: scroll;
+      overflow: hidden;
+
+      .top__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px;
+
+        .titles {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+
+      .buttons {
+        button {
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .table-responsive {
+        min-width: 1000px;
+
+        .table {
+          margin-bottom: 0;
+
+          thead th {
+            border-bottom: none;
+          }
+
+          td,
+          th {
+            vertical-align: middle;
+            text-align: center;
+
+            button {
+              margin-right: 10px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      // 마이페이지
+      .mypage__title {
+        --tw-bg-opacity: 1;
+        background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+        padding: 30px;
+      }
+
+      form {
+        padding: 50px;
+      }
+    }
+  }
+}
+
+/*
+modal
+*/
+
+.base__modal {
+  .modal-content {
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px 4px RGB(0 0 0 / 30%);
+    background: #fff;
+  }
+}
+
+/*
+0728 설정 */
+
+.bc__header__btn {
+  .btn-primary {
+    background: #6a8dbc;
+    border-color: #6a8dbc;
+    border-radius: 5px !important;
+    font-weight: 400;
+
+    &:hover {
+      background: #385781;
+      border-color: #385781;
+    }
+  }
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    background: #385781;
+    border-color: #385781;
+  }
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    background: #385781 !important;
+    border-color: #385781 !important;
+    box-shadow: none !important;
+  }
+  .btn-primary:focus,
+  .btn-primary.focus {
+    background: #385781;
+    border-color: #385781;
+  }
+
+  .bc__header__mypage {
+    margin: 0 8px;
+  }
+}
+
+.bc__pagination .page-item.disabled .page-link {
+  border-color: #3982d8;
+}
+.bc__pagination .page-item.disabled .page-link i {
+  color: #3982d8;
+}
+
+.bc__pagination .page-item.active .page-link {
+  background-color: #3982d8;
+  border-color: #3982d8;
+}
+
+.bc__pagination .page-link:hover {
+  background-color: #3982d8;
+  border-color: #3982d8;
+  color: #fff;
+}
+
+.bc__pagination .page-link {
+  border: 1px solid #3982d8;
+  color: #3982d8;
+}
+
+.table__title {
+  font-size: 1.25rem;
+}
+
+.bc__table {
+  thead th {
+    font-size: 0.85rem !important;
+    font-weight: 400 !important;
+  }
+
+  td,
+  th {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+}
+
+.bc__checkbox {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #3982d8;
+    border-radius: 5px;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #3982d8 !important;
+  }
+}
+
+.bc__toggle__switch {
+  input:checked + .custom-toggle-slider {
+    border: 1px solid #3982d8 !important;
+  }
+  input:checked + .custom-toggle-slider:before {
+    background: #3982d8 !important;
+  }
+}
+
+.bc__button__base {
+  .btn {
+    margin: 0 !important;
+    margin-right: 4px !important;
+    font-weight: 400;
+  }
+  .btn:last-child() {
+    margin-right: 0px !important;
+  }
+}
+
+/*
+publish >> menu js
+*/
+
+.full__container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.form__mt {
+  margin-top: 1.5rem;
+}
+
+/*
+footer 관련
+*/
+.footer {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  padding: 15px 0 !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(226, 232, 240, var(--tw-bg-opacity)) !important;
+}
+
+/*
+로그인 관련
+*/
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../images/login_bg.png") no-repeat center/cover;
+}
+.login-form {
+  border-radius: 5px;
+  background: #fff;
+  padding: 1em 1em 2em 1em;
+  min-width: 400px;
+}
+.login-logo {
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 10px 0px 30px 0px;
+}
+
+// 미디어쿼리
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1500px !important;
+  }
+}
+/* 파일드래그앤드랍css */
+.file-drop {
+  /* relatively position the container bc the contents are absolute */
+  position: relative;
+  height: 100px;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  border: 1px solid rgba(226, 232, 240, var(--tw-bg-opacity));
+  border-radius: 5px;
+}
+.file-drop-info {
+  color: #cccccc;
+}
+.file-drop-hidden {
+  display: none;
+}
+.file-drop > .file-drop-target {
+  /* basic styles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+
+  /* horizontally and vertically center all content */
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+
+  align-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+
+  text-align: center;
+}
+
+.file-drop > .file-drop-target.file-drop-dragging-over-frame {
+  /* overlay a black mask when dragging over the frame */
+  border: none;
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+  box-shadow: none;
+  z-index: 50;
+  opacity: 1;
+
+  /* typography */
+  color: white;
+}
+
+.file-drop > .file-drop-target.file-drop-dragging-over-target {
+  /* turn stuff orange when we are dragging over the target */
+  color: #6a8dbc;
+  box-shadow: 0 0 1px 1px #6a8dbc;
+}

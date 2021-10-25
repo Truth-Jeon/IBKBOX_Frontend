@@ -1,0 +1,43 @@
+.join__finish {
+    background: url('assets/images/join_finish.png') no-repeat;
+    height: 500px;
+}
+
+.join__finish .join__finish__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.join__finish .join__finish__tit {
+    font-size: 40px;
+    letter-spacing: -0.025em;
+    color: #333139;
+    font-weight: 300;
+}
+.join__finish .join__finish__tit span {
+    font-weight: 700;
+}
+
+.join__finish .join__finish__subtit {
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    color: #878296;
+    margin-top: 20px;
+}
+
+.join__finish button {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 23px;
+    background: #3982d8;
+    border: none;
+    text-align: center;
+    padding: 0 28px;
+    margin-top: 30px;
+}

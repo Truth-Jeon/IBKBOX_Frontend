@@ -1,0 +1,76 @@
+.join__same__box__cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.join__same__box__cover .register__subtit {
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: #565360;
+}
+.join__same__box__cover .register__tit {
+    font-size: 40px;
+    letter-spacing: -0.025em;
+    color: #333139;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.join__same__box__cover .register__tit span {
+    font-weight: 300;
+}
+
+.join__same__box__cover input {
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #bebbc9;
+    text-align: center;
+    font-size: 30px;
+    color: #333139;
+    border-radius: 4px;
+    outline: none;
+}
+
+.join__same__box__cover input.active,
+.join__same__box__cover input:focus {
+    border: 2px solid #00b9ef;
+    background: #f2f2f2;
+}
+
+.join__same__box__cover input:placeholder {
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #bebbc9;
+}
+
+.join__same__box__cover input:placeholder-shown {
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #bebbc9;
+}
+
+
+.join__same__box__cover .title {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.join__same__box__cover .title p {
+    font-size: 16px;
+}
+
+.join__same__box__cover .explane {
+    width: 100%;
+}
+
+
+
+.tooltip__list .tooltip_box {
+    margin-top: 20px;
+}

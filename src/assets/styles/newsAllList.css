@@ -1,0 +1,122 @@
+.news__content__cover .news__content .news__info .news__info__more.key_search {
+    border: none;
+}
+.news__content__cover .news__content .news__info .news__info__more.key_search input {
+    text-align: right;
+    font-size: 12px;
+    color: #878296;
+    border: none;
+}
+
+.news__content__cover .news__content .news__info .news__info__more.key_search input:focus {
+    outline: none;
+}
+.news__content__cover .news__content .news__info .news__info__more.key_search input::placeholder {
+    font-size: 12px;
+    color: #878296;
+}
+.news__content__cover .news__content .news__info .news__info__more.key_search img {
+    margin-left: 10px;
+}
+
+
+
+.news__card__cover .news__list {
+    margin: 0 30px;
+    display: flex;
+    border-bottom: 1px solid #efefef;
+}
+.news__card__cover .news__list .news__list__item {
+    display: flex;
+    padding: 0 10px 15px 10px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.news__card__cover .news__list .news__list__item p  {
+    color: #878296;
+    font-size: 14px;
+}
+.news__card__cover .news__list .news__list__item span {
+    background: #e3e4e5;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.news__card__cover .news__list .news__list__item.active::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #3982d8;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content:"";
+}
+.news__card__cover .news__list .news__list__item.active p  {
+    color: #333139;
+    font-weight: 600;
+}
+.news__card__cover .news__list .news__list__item.active span {
+    background: #3982d8;
+}
+
+
+
+
+
+
+.news__card__container.newsAllList {
+    margin-top: 20px;
+}
+
+.newsAllList .news__card__inner {
+    width: calc((100% / 2) - 18px);
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    margin: 9px;
+    flex-direction: inherit;
+}
+
+.newsAllList .news__card__inner .news__date {
+    right: 15px;
+}
+
+.newsAllList .news__allList__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.newsAllList .news__allList__inner img {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.newsAllList .news__card__inner .news__topic {
+    padding-left: 25px;
+}
+
+.newsAllList .news__card__inner .news__title {
+    padding-left: 25px;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+}
+
+.newsAllList .news__card__inner .news__related {
+    position: relative;
+    bottom: 0;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.list__content__inner {
+    width:calc(100% - 120px);
+}

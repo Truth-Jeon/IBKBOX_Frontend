@@ -1,0 +1,135 @@
+.newsscrap .news__card__inner {
+    align-items: start;
+    flex-direction: column;
+    padding: 30px 30px 20px 30px;
+}
+
+.newsscrap .news__card__inner .news__title {
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.newsscrap .news__card__inner .news__subtitle {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    margin-top: 10px;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+.newsscrap .scrap__util {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.newsscrap .scrap__util .scrap__util__left {
+    display: flex;
+}
+.newsscrap .scrap__util .scrap__util__left img {}
+.newsscrap .scrap__util .scrap__util__left .util__sort {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #878296;
+}
+
+.newsscrap .scrap__util .scrap__util__left .util__sort p {
+    padding: 0 8px;
+}
+.newsscrap .scrap__util .scrap__util__left .util__sort .location {
+    font-weight: 600;
+    position: relative;
+}
+
+.newsscrap .scrap__util .scrap__util__left .util__sort .location:after {
+    content:"";
+    display:block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #878296;
+}
+.newsscrap .scrap__util .scrap__util__left .util__sort .name {}
+.newsscrap .scrap__util .scrap__util__right {
+    margin-left: 40px;
+}
+.newsscrap .scrap__util .scrap__util__right .scrap__util__right__text {
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    color: #878296;
+}
+
+
+
+.scrap__trash {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.scrap__trash .hover{
+    display: none;
+}
+
+.scrap__trash:hover {
+    background: #ebe9f1;
+}
+.scrap__trash:hover .hover {
+    display: block;
+}
+.scrap__trash:hover .base {
+    display: none;
+}
+
+
+.scrap__kinds {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.scrap__kinds .kinds__left {
+    display: flex;
+}
+.scrap__kinds .kinds__left p {
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    padding: 0 7px;
+}
+.scrap__kinds .kinds__left .sort {
+    position: relative;
+}
+.scrap__kinds .kinds__left .sort:after {
+    content:"";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #72d2ff;
+}
+.scrap__kinds .kinds__left .portal {
+    color: #878296;
+}
+
+.scrap__kinds .news__date {
+    position: static;
+    top: 0px;
+    right: 0px !important;
+}

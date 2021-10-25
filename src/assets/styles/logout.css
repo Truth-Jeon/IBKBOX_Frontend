@@ -1,0 +1,33 @@
+.logout__container {
+    text-align: center;
+}
+.logout__container img {}
+.logout__container h2 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #565360;
+}
+.logout__container h2 span {
+    font-weight: 700;
+}
+.logout__container p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 26px;
+    color: #565360;
+}
+.logout__container .logout__btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.logout__container .logout__btn .btn--base {
+    width: 100px;
+}
+.logout__container .logout__btn .btn--base.bg-full {
+    margin-left: 5px;
+}
